@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="src/css/output.css">
     <title>WikiWorks&You</title>
 </head>
+
+<!-- npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch -->
+
 <body class="">
     <header>
         <section class="flex flex-row items-center bg-blue-950 p-2.5 gap-4 justify-between">
@@ -23,14 +26,26 @@
                 </div>
             </div>
         </section>
-        <section class="flex mx-auto mt-5 rounded-3xl gap-10 justify-center items-center border-2 border-blue-950 w-2/3 h-10 bg-blue-800 ">
-            <div class="text-amber-500 text-lg"><p>Accueil</p></div>
-            <div class="text-amber-500 text-lg"><p>Catégorie</p></div>
-            <div class="text-amber-500 text-lg"><p>Formation</p></div>
-            <div class="text-amber-500 text-lg"><p>Article</p></div>
-            <div class="text-amber-500 text-lg"><p>Créer sa carte</p></div>
+        <section class="flex mx-auto mt-5  justify-center items-center"> <!--flex mx-auto mt-5 rounded-3xl gap-10 justify-center items-center border-2 border-blue-950 w-2/3 h-10 bg-blue-800 -->
+            <div class="text-amber-500 text-lg"><button class="bg-blue-950 p-2 px-4 rounded-l-3xl border-2">Accueil</button></div>
+            <div class="text-amber-500 text-lg"><button class="bg-blue-800 p-2 px-4 border-1">Catégorie</button></div>
+            <div class="text-amber-500 text-lg"><button class="bg-blue-800 p-2 px-4 border-1">Formation</button></div>
+            <div class="text-amber-500 text-lg"><button class="bg-blue-800 p-2 px-4 border-1">Article</button></div>
+            <div class="text-amber-500 text-lg"><button class="bg-blue-800 p-2 px-4 rounded-r-3xl border-1">Créer sa carte</button></div>
         </section>
     </header>
+
+    <main class="flex-row mx-32 mt-32">
+        <section class="flex-row mx-auto">
+            <h1 class="text-4xl">Un Wiki participatif, où chacun partage son expérience </h1>
+            <div class="ml-2 mt-5">
+                <p>Sur ce wiki, on construit ensemble un espace de partage et de connaissances. Pour que ça fonctionne bien, il est important que chacun participe dans un bon esprit : on écrit de façon claire, on reste factuel, et on évite les jugements ou les prises de position personnelles. L’idée, c’est d’avancer tous ensemble, en valorisant les contributions et en aidant à les améliorer quand c’est nécessaire.</p>
+                <p class="mt-3">La bonne entente, c’est aussi dans les échanges autour des "cartes" créées par chacun. Quand on laisse un commentaire, on pense à rester bienveillant : on commente le contenu, pas la personne. Les retours sont toujours plus utiles quand ils sont formulés avec respect et dans l’idée de faire progresser le travail. Un ton positif et constructif aide à garder une ambiance agréable pour tout le monde !</p>
+            </div>
+        </section>
+
+
+    </main>
     
 </body>
 </html>
