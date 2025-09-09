@@ -10,30 +10,7 @@
 <!-- npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch -->
 
 <body class="">
-    <header>
-        <section class="flex flex-row items-center bg-blue-950 p-2.5 gap-4 justify-between ">
-            <div class="flex-row items-center mx-32">
-                <div class="flex items-center gap-4">
-                    <img class="inline w-14 " src="src/assets/Logo de WikiWorks & You 1.png" alt="Logo représente un cercle avec l'éducation, la culture, la communication et le travail">
-                    <p class="text-4xl text-amber-500">WikiWorks&You</p>
-                </div>
-            </div>
-            <div class="flex items-center mx-32">
-                <div class="">
-                    <p class="text-amber-500 ">Se connecter
-                        <img class="inline w-12 h-12 ml-4" src="src/assets/avatar.png" alt="">
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="flex mx-auto mt-5  justify-center items-center"> <!--flex mx-auto mt-5 rounded-3xl gap-10 justify-center items-center border-2 border-blue-950 w-2/3 h-10 bg-blue-800 -->
-            <div class="text-amber-500 text-lg"><button class="bg-blue-950 py-1.5 px-5 rounded-l-3xl border-2">Accueil</button></div>
-            <div class="text-amber-500 text-lg"><button class="bg-blue-800 py-1.5 px-5 border-1">Catégorie</button></div>
-            <div class="text-amber-500 text-lg"><button class="bg-blue-800 py-1.5 px-5 border-1">Formation</button></div>
-            <div class="text-amber-500 text-lg"><button class="bg-blue-800 py-1.5 px-5 border-1">Article</button></div>
-            <div class="text-amber-500 text-lg"><button class="bg-blue-800 py-1.5 px-5 rounded-r-3xl border-1">Créer sa carte</button></div>
-        </section>
-    </header>
+    <mon-header></mon-header>
 
     <main class="flex-row mx-32 mt-32">
         <section class="flex-row mx-auto">
@@ -87,35 +64,35 @@
                 <div><button class="bg-blue-800 py-1 px-6 rounded-2xl border-amber-500 border-2"><a class="text-amber-500 font-semibold" href="#">+ Cartes</a></button>
                 </div>
             </div>
-            <div class="flex">
+            <div class="flex items-center justify-between mt-5 ml-2">
                 <div class="flex flex-row">
                     <img src="" alt="">
                     <h3>Comment fonctionne le système de carte ?</h3>
                     <p></p>
                 </div>
-                <div class="flex flex-row">
-                    <h3>Top trois des cartes les plus parcourus :</h3>
-                    <div>
+                <div class="flex flex-col">
+                    <h3 class="font-bold">Top trois des cartes les plus parcourus :</h3>
+                    <div class="mt-4">
                         <img src="" alt="">
-                        <h4>Infirmière en centre hospitalier</h4>
+                        <h4 class="font-semibold">Infirmière en centre hospitalier</h4>
                         <div>
                             <p>Carte créée le 17/02/2025</p>
                             <p>Commentaires : 18 contributions</p>
                             <p>Note de la communauté : 4.7/5</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="mt-4">
                         <img src="" alt="">
-                        <h4>Mécanicien automobile dans un garage indépendant</h4>
+                        <h4 class="font-semibold">Mécanicien automobile dans un garage indépendant</h4>
                         <div>
                             <p>Carte créée le 25/05/2025</p>
                             <p>Commentaires : 15 contributions</p>
                             <p>Note de la communauté : 4.6/5</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="mt-4">
                         <img src="" alt="">
-                        <h4>Gardien de la paix</h4>
+                        <h4 class="font-semibold">Gardien de la paix</h4>
                         <div>
                             <p>Carte créée le 17/04/2025</p>
                             <p>Commentaires : 22 contributions</p>
@@ -156,6 +133,8 @@
 
 
     </main>
-    
+
+    <script src="index.js"></script>
+
 </body>
 </html>
