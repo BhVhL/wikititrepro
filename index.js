@@ -33,3 +33,58 @@ class monHeader extends HTMLElement{
 }
 
 customElements.define("mon-header", monHeader);
+
+
+// ----------------------------------------------
+
+class monFooter extends HTMLElement{
+    constructor(){
+        super();
+
+        const wrap2 = document.createElement("footer");
+        wrap2.innerHTML = `
+        <section class="bg-blue-800 w-auto h-72">
+            <div class="flex flex-row justify-evenly">
+                <div class="flex h-72 ">
+                    <img src="src/assets/entraide.png" alt="">
+                </div>
+                <div class="flex items-center font-bold text-white text-2xl w-3xl">
+                    <p>Dans la lumière de chacun brille une part de tous : c’est dans le partage, l’entraide et la confiance que se construit la force collective.</p>
+                </div>
+                <div class="flex h-72 ">
+                    <img src="src/assets/confiance.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-blue-950 w-auto h-96 flex flex-row justify-center gap-36 items-center">
+            <div class="flex h-36 mb-4">
+                <img class="flex h-20" src="src/assets/Logo de WikiWorks & You 1.png" alt="">
+            </div>
+            <div class="flex flex-row gap-36 text-amber-500 text-lg font-semibold">
+                <div>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Formation</a></li>
+                        <li><a href="#">Catégorie</a></li>
+                        <li><a href="#">Article</a></li>
+                        <li><a href="#">Créer sa carte</a></li>
+                        <li><a href="#">Haut de page</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">CGU</a></li>
+                        <li><a href="#">Qui nous sommes ?</a></li>
+                        <li><a href="#">Nous rejoindre</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        `;
+        this.appendChild(wrap2);
+    }
+}
+
+customElements.define("mon-footer", monFooter);
