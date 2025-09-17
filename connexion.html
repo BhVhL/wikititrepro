@@ -9,14 +9,84 @@
 <body>
     <mon-header></mon-header>
     
-    <main>
-        <section>
-            <div></div>
-            <hr>
-            <div></div>
+    <main class="mx-32 mt-16">
+        <section class="flex mx-auto">
+            <div class="flex bg-blue-950 mx-auto  py-6 px-8">
+                <div>
+                    <div class="flex justify-center text-white font-semibold text-3xl">
+                        <p>Création de compte</p>
+                    </div>
+                    <div class="mt-4">
+                        <form action="" method="post">
+                            <label class="text-white font-semibold block" for="nameUser">Nom d'utilisateur:</label>
+                            <input type="text" name="nameUser" id="nameUser" placeholder="Jean Dubois" class="bg-blue-800 w-80 rounded-lg p-2">
+                        </form>
+                        <div class="flex flex-row justify-evenly items-center mt-3">
+                            <form action="" method="post">
+                                <select class="text-white font-semibold bg-blue-800 px-3 py-2 rounded-lg" name="jeSuis" id="jeSuis">
+                                    <option class="bg-blue-950 text-amber-500 font-semibold px-3 py-2 border-amber-500 rounded-lg" value="">Anonyme</option>
+                                    <option class="bg-blue-950 text-amber-500 font-semibold px-3 py-2 border-amber-500 rounded-lg" value="1">une Femme</option>
+                                    <option class="bg-blue-950 text-amber-500 font-semibold px-3 py-2 border-amber-500 rounded-lg" value="2">un Homme</option>
+                                </select>
+                            </form>
+                            <form action="" method="post">
+                                <label class="text-white font-semibold" for="age">Age:</label>
+                                <input type="tel" id="age" placeholder="...ans" class="bg-blue-800 px-3 py-2 rounded-lg w-16">
+                            </form>
+                        </div>
+                        <div class="mt-2">
+                            <form action="" method="post">
+                                <label class="text-white font-semibold block" for="mail">E-mail:</label>
+                                <input type="email" id="email" placeholder="monmerveilleux@mail.fr" class="bg-blue-800 w-80 rounded-lg p-2">
+                            </form>
+                        </div>
+                        <div class="mt-2">
+                            <form action="" method="post">
+                                <label class="text-white font-semibold block" for="password">Mot de passe:</label>
+                                <input type="password" id="password" placeholder="Ma1j2u3s4c5u6l7e8" class="bg-blue-800 w-80 rounded-lg p-2">
+                            </form>
+                        </div>
+                        <div class="mt-2">
+                            <form action="" method="post">
+                                <label class="text-white font-semibold block" for="password">Mot de passe à nouveau:</label>
+                                <input type="password" id="password" placeholder="Ma1j2u3s4c5u6l7e8" class="bg-blue-800 w-80 rounded-lg p-2">
+                            </form>
+                        </div>
+                    </div>
+                    <form class=" flex justify-center mt-4" action="" method="post">
+                        <button class="py-3 px-6 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600" type="submit">Créer mon compte</button>
+                    </form>                  
+                </div>
+
+                <hr class="bg-amber-500 w-1 h-96 mx-8 my-8 flex items-center">
+
+                <div>
+                    <div class="flex justify-center text-white font-semibold text-3xl">
+                        <p>Connectez-vous</p>
+                    </div>
+                    <div class="mt-24">
+                        <form action="" method="post">
+                            <label class="text-white font-semibold block" for="email">E-mail:</label>
+                            <input type="email" id="email" placeholder="monmerveilleux@mail.fr" class="bg-blue-800 w-80 rounded-lg p-2">
+                        </form>
+                    </div>
+                    <div class="mt-2">
+                        <form action="" method="post">
+                            <label class="text-white font-semibold block" for="password">Mot de passe:</label>
+                            <input type="password" id="password" placeholder="Ma1j2u3s4c5u6l7e8" class="bg-blue-800 w-80 rounded-lg p-2">
+                        </form>
+                    </div>
+                    <form class="flex justify-center" action="" method="post">
+                        <button class="mt-4 py-3 px-6 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600" type="submit">Se Connecter</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     
     <mon-footer></mon-footer>
+
+    <script src="index.js"></script>
+
 </body>
 </html>

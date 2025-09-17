@@ -1,2 +1,21 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Baumans&display=swap');
 
+
+/* Charger la police */
+@font-face {
+  font-family: "BaumansLocal";
+  src: url("./assets/Baumans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Variable globale */
+:root {
+  --font-display: "BaumansLocal", sans-serif;
+}
+
+/* Style personnalisé */
+h1, h2 {
+  font-family: var(--font-display);
+}

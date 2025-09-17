@@ -14,7 +14,7 @@
 
     <main class="flex-row mx-32 mt-32">
         <section class="flex-row mx-auto">
-            <h1 class="text-4xl">Un Wiki participatif, où chacun partage son expérience </h1>
+            <h1 class="text-4xl font-semibold">Un Wiki participatif, où chacun partage son expérience </h1>
             <div class="ml-2 mt-5">
                 <p>Sur ce wiki, on construit ensemble un espace de partage et de connaissances. Pour que ça fonctionne bien, il est important que chacun participe dans un bon esprit : on écrit de façon claire, on reste factuel, et on évite les jugements ou les prises de position personnelles. L’idée, c’est d’avancer tous ensemble, en valorisant les contributions et en aidant à les améliorer quand c’est nécessaire.</p>
                 <p class="mt-3">La bonne entente, c’est aussi dans les échanges autour des "cartes" créées par chacun. Quand on laisse un commentaire, on pense à rester bienveillant : on commente le contenu, pas la personne. Les retours sont toujours plus utiles quand ils sont formulés avec respect et dans l’idée de faire progresser le travail. Un ton positif et constructif aide à garder une ambiance agréable pour tout le monde !</p>
@@ -27,28 +27,123 @@
             <div>
                 <h2 class="text-4xl">Naviguer à travers les catégories les plus recherchées !</h2>
             </div>
-            <div class="flex items-center justify-between mt-5 ml-2">
-                <div>
-                    <button onclick="industrieMenu">Industrie</button>
+
+            <div class="flex flex-col items-center justify-between mt-5 ml-2">
+                <div class="flex flex-row items-center gap-27">
+                    <div>
+                        <button id="imgIndustrie" class="text-lg font-semibold">Industrie</button>
+                    </div>
+                    <div>
+                        <button id="imgService" class="text-lg">Service à la personne</button>
+                    </div>
+                    <div>
+                        <button id="imgCommerce" class="text-lg">Commerce / Vente</button>
+                    </div>
+                    <div>
+                        <button id="imgBatiment" class="text-lg">Bâtiment / Travaux Publics</button>
+                    </div>
+                    <div>
+                        <button id="imgInstallation" class="text-lg">Installation / Maintenance</button>
+                    </div>
+                    <div>
+                        <button id="imgSante" class="text-lg">Santé</button>
+                    </div>
+                    <div>
+                        <button class="bg-blue-950 py-1 px-6 rounded-2xl border-amber-500 border-2 hover:bg-blue-800"><a class="text-amber-500 font-semibold " href="#">+ Catégorie</a></button>
+                    </div>
                 </div>
-                <div>
-                    <button onclick="serviceMenu">Service à la personne</button>
+                <div class="flex flex-row gap-6 mt-5">
+                    <div class="flex flex-col">
+                        <img id="img__container1" class="w-auto h-64 rounded-2xl" src="src/assets/technicien_prod.png" alt="">
+                        <div class="flex justify-center mt-2">
+                            <h4 id="txt__container1" class="flex justify-center text-lg font-semibold bg-white/20 ">Technicien de Production</h4>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-blue-950 py-1 px-6 text-amber-500 font-semibold mt-3 rounded-2xl border-amber-500 border-2 hover:bg-blue-800">Accéder à cet article</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img id="img__container2" class="w-auto h-64 rounded-2xl" src="src/assets/chaudronnier.png" alt="">
+                        <div class="flex justify-center mt-2">
+                            <h4 id="txt__container2" class="flex justify-center text-lg font-semibold bg-white/20 ">Chaudronnier</h4>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-blue-950 py-1 px-6 text-amber-500 font-semibold mt-3 rounded-2xl border-amber-500 border-2 hover:bg-blue-800">Accéder à cet article</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img id="img__container3" class="w-auto h-64 rounded-2xl" src="src/assets/usineur.png" alt="">
+                        <div class="flex justify-center mt-2">
+                            <h4 id="txt__container3" class="flex justify-center text-lg font-semibold bg-white/20 ">Usineur</h4>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-blue-950 py-1 px-6 text-amber-500 font-semibold mt-3 rounded-2xl border-amber-500 border-2 hover:bg-blue-800">Accéder à cet article</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img id="img__container4" class="w-auto h-64 rounded-2xl" src="src/assets/contrôle_qualité.png" alt="">
+                        <div class="flex justify-center mt-2">
+                            <h4 id="txt__container4" class="flex justify-center text-lg font-semibold bg-white/20 ">Agent de Contrôle Qualité</h4>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-blue-950 py-1 px-6 text-amber-500 font-semibold mt-3 rounded-2xl border-amber-500 border-2 hover:bg-blue-800">Accéder à cet article</button>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <button onclick="commerceMenu">Commerce / Vente</button>
-                </div>
-                <div>
-                    <button onclick="batimentMenu">Bâtiment / Travaux Publics</button>
-                </div>
-                <div>
-                    <button onclick="installationMenu">Installation / Maintenance</button>
-                </div>
-                <div>
-                    <button onclick="santeMenu">Santé</button>
-                </div>
-                <div>
-                    <button class="bg-blue-800 py-1 px-6 rounded-2xl border-amber-500 border-2"><a class="text-amber-500 font-semibold " href="#">+ Catégorie</a></button>
-                </div>            
+            
+            </div>
+<!-- 
+            <div class="carousel1 flex items-center justify-between mt-5 ml-2">
+                <div class="carousel__container">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>    
+            </div>
+
+            <div class="carousel2 flex items-center justify-between mt-5 ml-2">
+                <div class="carousel__container"></div>    
+            </div>
+
+            <div class="carousel3 flex items-center justify-between mt-5 ml-2">
+                <div class="carousel__container">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>    
+            </div>
+
+            <div class="carousel4 flex items-center justify-between mt-5 ml-2">
+                <div class="carousel__container">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>    
+            </div>
+
+            <div class="carousel5 flex items-center justify-between mt-5 ml-2">
+                <div class="carousel__container">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>    
+            </div>
+
+            <div class="carousel6 flex items-center justify-between mt-5 ml-2">
+                <div class="carousel__container">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>    
+            </div> -->
+
+            <div id="semiCarouselPlacement" class="flex flex-row justify-evenly mt-5">
+                
             </div>
         </section>
 
@@ -61,49 +156,55 @@
         <section class="mx-auto mt-32 "> 
             <div class="flex justify-between">
                 <div><h2 class="text-4xl">Recherchez et apprennez grâce aux cartes créées par la communauté !</h2></div>
-                <div><button class="bg-blue-800 py-1 px-6 rounded-2xl border-amber-500 border-2"><a class="text-amber-500 font-semibold" href="#">+ Cartes</a></button>
+                <div><button class="bg-blue-950 hover:bg-blue-800 py-1 px-6 rounded-2xl border-amber-500 border-2"><a class="text-amber-500 font-semibold" href="#">+ Cartes</a></button>
                 </div>
             </div>
-            <div class="flex items-center justify-between mt-5 ml-2">
-                <div class="flex flex-row">
-                    <img src="" alt="">
-                    <h3>Comment fonctionne le système de carte ?</h3>
+            <div class="flex flex-row justify-evenly mt-5 ml-2">
+                <div class="flex flex-col">
+                    <img class="flex flex-row mt-2 w-auto max-h-96 rounded-lg" src="src/assets/fond-personna_carte.png" alt="">
+                    <h3 class="flex justify-center font-semibold text-lg mt-2">Comment fonctionne le système de carte ?</h3>
                     <p></p>
                 </div>
                 <div class="flex flex-col">
                     <h3 class="font-bold">Top trois des cartes les plus parcourus :</h3>
-                    <div class="mt-4">
-                        <img src="" alt="">
-                        <h4 class="font-semibold">Infirmière en centre hospitalier</h4>
-                        <div>
-                            <p>Carte créée le 17/02/2025</p>
-                            <p>Commentaires : 18 contributions</p>
-                            <p>Note de la communauté : 4.7/5</p>
+                    <div class="flex flex-row mt-4">
+                        <img class="flex flex-row w-auto h-32 rounded-lg" src="src/assets/carte-personna_médecin.png" alt="">
+                        <div class="flex flex-col ml-2">
+                            <h4 class="font-semibold">Infirmière en centre hospitalier</h4>
+                            <div class="mt-2">
+                                <p>Carte créée le 17/02/2025</p>
+                                <p>Commentaires : 18 contributions</p>
+                                <p>Note de la communauté : 4.7/5</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-4">
-                        <img src="" alt="">
-                        <h4 class="font-semibold">Mécanicien automobile dans un garage indépendant</h4>
-                        <div>
-                            <p>Carte créée le 25/05/2025</p>
-                            <p>Commentaires : 15 contributions</p>
-                            <p>Note de la communauté : 4.6/5</p>
+                    <div class="flex flex-row mt-4">
+                        <img class="flex flex-row w-auto h-32 rounded-lg" src="src/assets/carte-personna_mécanicien.png" alt="">
+                        <div class="flex flex-col ml-2">
+                            <h4 class="font-semibold">Mécanicien automobile dans un garage indépendant</h4>
+                            <div class="mt-2">
+                                <p>Carte créée le 25/05/2025</p>
+                                <p>Commentaires : 15 contributions</p>
+                                <p>Note de la communauté : 4.6/5</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-4">
-                        <img src="" alt="">
-                        <h4 class="font-semibold">Gardien de la paix</h4>
-                        <div>
-                            <p>Carte créée le 17/04/2025</p>
-                            <p>Commentaires : 22 contributions</p>
-                            <p>Note de la communauté : 4.4/5</p>
+                    <div class="flex flex-row mt-4">
+                        <img class="flex flex-row w-auto h-32 rounded-lg" src="src/assets/carte-personna_policier.png" alt="">
+                        <div class="flex flex-col ml-2">
+                            <h4 class="font-semibold">Gardien de la paix</h4>
+                            <div class="mt-2">
+                                <p>Carte créée le 17/04/2025</p>
+                                <p>Commentaires : 22 contributions</p>
+                                <p>Note de la communauté : 4.4/5</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <hr>
+        <hr class="bg-blue-950 mx-auto h-0.5 mt-16">
 
         <section>
             <div>
