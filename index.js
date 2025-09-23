@@ -21,11 +21,11 @@ class monHeader extends HTMLElement{
         </section>
         <section class="flex mx-auto mt-5 justify-center items-center static">
             <div class="bg-blue-950 flex flex-row px-2 py-2 rounded-4xl static">
-                <a class="text-amber-500 text-lg hover:text-white px-8" href="index.html">Accueil</a> 
-                <a class="text-amber-500 text-lg hover:text-white px-8" href="categorie.html">Catégorie</a> 
-                <a class="text-amber-500 text-lg hover:text-white px-8" href="#">Formation</a> 
-                <a class="text-amber-500 text-lg hover:text-white px-8" href="article.html">Article</a> 
-                <a class="text-amber-500 text-lg hover:text-white px-8" href="creerCarte.html">Créer sa carte</a> 
+                <a class="text-amber-500 text-lg hover:text-white px-8 maPageClass" href="index.html">Accueil</a> 
+                <a class="text-amber-500 text-lg hover:text-white px-8 maPageClass" href="categorie.html">Catégorie</a> 
+                <a class="text-amber-500 text-lg hover:text-white px-8 maPageClass" href="#">Formation</a> 
+                <a class="text-amber-500 text-lg hover:text-white px-8 maPageClass" href="article.html">Article</a> 
+                <a class="text-amber-500 text-lg hover:text-white px-8 maPageClass" href="creerCarte.html">Créer sa carte</a> 
             </div>
         </section>    
     `;
@@ -37,14 +37,21 @@ class monHeader extends HTMLElement{
 customElements.define("mon-header", monHeader);
 
 
-const maPage = window.location.pathname.split("/").pop();
+// ----------------------------------------------
 
+const maPage = window.location.pathname.split("/").pop();
+console.log(maPage);
 document.querySelectorAll("section a").forEach(link =>{
     const lienMaPage = link.getAttribute("href");
     if(lienMaPage === maPage){
         link.classList.add("bg-blue-800", "rounded-2xl", "border-ambre-500", "border-1")
     };
+    // if(lienMaPage === "connexion.html" && maPage === connexion.html){
+    //     link.classList.add("text-white", "text-lg", "font-semibold")
+    // };
+    
 })
+
 
 
 // ----------------------------------------------
